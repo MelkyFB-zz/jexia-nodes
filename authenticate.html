@@ -1,0 +1,36 @@
+<script type="text/javascript">
+    RED.nodes.registerType('authenticate',{
+        category: 'jexia',
+        color: '#3FADB5',
+        defaults:{
+            key: {value:""},
+            secret: {value:""},
+            projecturl: {value:""}
+        },
+        inputs: 1,
+        outputs: 1,
+        icon: "file.png",
+        label: function(){
+            return this.name || 'Authenticate';
+        }
+    });
+</script>
+
+<script type="text/x-red" data-template-name="authenticate">
+    <div class="form-row">
+        <label for="node-input-key"><i class="icon-tag"></i> Key</label>
+        <input type="text" id="node-input-key" placeholder="Key">
+    </div>
+    <div class="form-row">
+        <label for="node-input-secret"><i class="icon-tag"></i> Secret</label>
+        <input type="text" id="node-input-secret" placeholder="Secret">
+    </div>
+    <div class="form-row">
+        <label for="node-input-projec-url"><i class="icon-tag"></i> Project URL</label>
+        <input type="text" id="node-input-projecturl" placeholder="Project URL">
+    </div>
+</script>
+
+<script type="text/x-red" data-help-name="lower-case">
+    <p>Authenticate node for Jexia Framework</p>
+</script>

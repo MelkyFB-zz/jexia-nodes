@@ -1,0 +1,14 @@
+{
+    "name": "jexia-nodes",
+    "node-red": {
+        "nodes": {
+            "authenticate": "authenticate.js",
+            "create": "create.js",
+            "delete": "delete.js",
+            "fetch": "fetch.js"
+        }
+    },
+    "dependencies": {
+        "request": "^2.74.0"
+    }
+}

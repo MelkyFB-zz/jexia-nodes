@@ -1,0 +1,31 @@
+<script type="text/javascript">
+    RED.nodes.registerType('create',{
+        category: 'jexia',
+        color: '#3FADB5',
+        defaults:{
+            resourcename: {value:""},
+            projecturl: {value:""}
+        },
+        inputs: 1,
+        outputs: 1,
+        icon: "file.png",
+        label: function(){
+            return this.name || 'Create';
+        }
+    });
+</script>
+
+<script type="text/x-red" data-template-name="create">
+    <div class="form-row">
+        <label for="node-input-resourcename"><i class="icon-tag"></i> Resource Name</label>
+        <input type="text" id="node-input-resourcename" placeholder="Resource Name">
+    </div>
+    <div class="form-row">
+        <label for="node-input-project-url"><i class="icon-tag"></i> Project URL</label>
+        <input type="text" id="node-input-projecturl" placeholder="Project URL">
+    </div>
+</script>
+
+<script type="text/x-red" data-help-name="lower-case">
+    <p>Create node for Jexia Framework</p>
+</script>
